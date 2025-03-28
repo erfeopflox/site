@@ -11,8 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     header("Access-Control-Allow-Headers: Content-Type");
     exit(0);
 }
-
-$json_url = "https://raw.githubusercontent.com/Artem-Russiun/gayporno/refs/heads/main/accounts.json";
+$json_url = "https://raw.githubusercontent.com/erfeopflox/denzclient/refs/heads/main/accounts.json";
 
 $data = json_decode(file_get_contents("php://input"), true);
 $username = trim($data["username"]);
